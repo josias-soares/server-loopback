@@ -1,0 +1,30 @@
+{
+  "name": "ExcluirApontamentoAlterRequest",
+  "plural": "ExcluirApontamentoAlterRequests",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Token":{
+      "type":"string",
+      "required":true
+    },
+    "FirebaseToken": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "Id": {
+      "type": "number",
+      "generated": true,
+      "id": 1
+    }
+  },
+  "hidden":[],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

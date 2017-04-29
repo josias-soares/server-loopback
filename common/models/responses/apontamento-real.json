@@ -1,0 +1,66 @@
+{
+  "name": "Apontamento_Real",
+  "plural": "Apontamentos_Reais",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Id": {
+      "type": "number",
+      "generated": true,
+      "id": 1
+    },
+    "IdEvento": {
+      "type": "number",
+      "required": true
+    },
+    "IdJornadaReal": {
+      "type": "number",
+      "required": true
+    },
+    "DataHoraInicio":{
+      "type": "date",
+      "required": true
+    },
+    "DataHoraFim":{
+      "type": "date",
+      "required": true
+    },
+    "Latitude": {
+      "type": "number",
+      "required": true
+    },
+    "Longitude": {
+      "type": "number",
+      "required": true
+    },
+    "LocalEndereco": {
+      "type": "string",
+      "required": true
+    },
+    "Alterado":{
+      "type": "boolean",
+      "required": true,
+      "default" : false
+    },
+    "MotivoAlteracao": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Evento": {
+      "type": "belongsTo",
+      "model": "Evento",
+      "foreignKey": "IdEvento"
+    },
+    "JornadaReal": {
+      "type": "belongsTo",
+      "model": "JornadaReal",
+      "foreignKey": "IdJornadaReal"
+    }},
+  "acls": [],
+  "methods": {}
+}

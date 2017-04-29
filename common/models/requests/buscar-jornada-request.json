@@ -1,0 +1,28 @@
+{
+  "name": "BuscarJornadaRequest",
+  "plural": "BuscarJornadaRequests",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Token": {
+      "type": "string",
+      "required": true
+    },
+    "FirebaseToken": {
+      "type": "string",
+      "required": true
+    },
+    "DataInicioJornada":{
+      "type": "date",
+      "required": false
+    }
+  },
+  "hidden":["id"],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
