@@ -1,0 +1,56 @@
+{
+  "name": "CadastrarEventoRequest",
+  "plural": "CadastrarEventoRequests",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Token":{
+      "type":"string",
+      "required":true
+    },
+    "FirebaseToken": {
+      "type": "string",
+      "required": true
+    },
+    "IdEmpresa": {
+      "type": "number",
+      "required": true
+    },
+    "IdFilial": {
+      "type": "number",
+      "required": true
+    },
+    "IdTipoEvento": {
+      "type": "number",
+      "required": true
+    },
+    "Codigo": {
+      "type": "number",
+      "required": true
+    },
+    "Descricao": {
+      "type": "string",
+      "required": true
+    },
+    "LimiteMaximo": {
+      "type": "string",
+      "required": true
+    },
+    "LimiteMinimo": {
+      "type": "string",
+      "required": true
+    },
+    "Predecessores": {
+      "type": [{"IdTipoEvento" : "number"}],
+      "required": true
+    }
+  },
+  "hidden":["id"],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

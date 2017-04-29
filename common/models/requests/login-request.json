@@ -1,0 +1,30 @@
+{
+  "name": "LoginRequest",
+  "plural": "LoginRequests",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Token": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "FirebaseToken": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "hidden": [
+    "id"
+  ],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

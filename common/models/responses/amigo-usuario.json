@@ -1,0 +1,25 @@
+{
+  "name": "AmigoUsuario",
+  "plural": "AmigosUsuarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+      "Usuario": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": "IdUsuario"
+    },
+    "Amigo": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": "IdAmigo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

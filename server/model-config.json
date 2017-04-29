@@ -1,0 +1,191 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models/requests",
+      "../common/models/responses",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins/requests",
+      "../common/mixins/responses",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+
+
+
+  "RegistroRequest": {
+    "dataSource": "db",
+    "public": false
+  },
+  "LoginRequest": {
+    "dataSource": "db",
+    "public": false
+  },
+  "SearchByTokenRequest": {
+    "dataSource": "db",
+    "public": false
+  },
+
+
+
+
+  "CadastrarTipoEventoRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "ExcluirTipoEventoRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "CadastrarEventoRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "ExcluirEventoRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "BuscarEventoRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+
+
+
+  "CadastrarApontamentoAlterRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "ExcluirApontamentoAlterRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "SearchApontByIdRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+
+
+
+  "CadastrarAlterarJornadaRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "ExcluirJornadaRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "BuscarJornadaRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+  "FinalizarJornadaRequest":{
+    "dataSource": "db",
+    "public": false
+  },
+
+
+
+
+
+  "Usuario": {
+    "dataSource": "ats",
+    "public": true
+  },
+
+
+
+  "Conquista": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "TipoConquista": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "AmigoUsuario": {
+    "dataSource": "mssqlqra",
+    "public": false
+  },
+  "ConquistaUsuario": {
+    "dataSource": "mssqlqra",
+    "public": false
+  },
+  "Familia": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Score": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Timeline": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+
+
+
+  "TipoEvento": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Evento": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Jornada_Real": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Jornada_Alter": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Apontamento_Real": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Apontamento_Alter": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Horario": {
+    "dataSource": "mssqlqra",
+    "public": true
+  },
+  "Predecessor": {
+    "dataSource": "mssqlqra",
+    "public": true
+  }
+}

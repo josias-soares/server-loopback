@@ -1,0 +1,76 @@
+{
+  "name": "CadastrarAlterarJornadaRequest",
+  "plural": "CadastrarAlterarJornadaRequests",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Token":{
+      "type":"string",
+      "required":true
+    },
+    "FirebaseToken": {
+      "type": "string",
+      "required": true
+    },
+    "Id": {
+      "type": "number",
+      "required": false
+    },
+    "IdUsuario": {
+      "type": "number",
+      "required": true
+    },
+    "DataInicioJornada":{
+      "type":"Date",
+      "required":true
+    },
+    "HorasEmDirecao": {
+      "type": "string",
+      "required": false
+    },
+    "HorasEmEspera": {
+      "type": "string",
+      "required": false
+    },
+    "TotalHorasJornada": {
+      "type": "string",
+      "required": false
+    },
+    "HorasExtras": {
+      "type": "string",
+      "required": false
+    },
+    "HorasEmIntervalo": {
+      "type": "string",
+      "required": false
+    },
+    "HorasDiurnas": {
+      "type": "string",
+      "required": false
+    },
+    "HorasEmDescDirecao": {
+      "type": "string",
+      "required": false
+    },
+    "HorasNoturnas": {
+      "type": "string",
+      "required": false
+    },
+    "TotalHorasRepouso": {
+      "type": "string",
+      "required": true
+    },
+    "DataFimJornada":{
+      "type":"Date",
+      "required":false
+    }
+  },
+  "hidden":["id"],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

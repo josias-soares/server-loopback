@@ -1,0 +1,55 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ats": {
+    "name": "ats",
+    "crud": false,
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "http://atsweb.sistemainfo.com.br:90/Usuario/Login",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "body": "{JSON:object}"
+        },
+        "functions": {
+          "LoginUsuario": [
+            "JSON"
+          ]
+        }
+      },
+      {
+        "template": {
+          "method": "POST",
+          "url": "http://atsweb.sistemainfo.com.br:90/Usuario/Integrar",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "body": "{JSON:object}"
+        },
+        "functions": {
+          "IntegrarUsuario": [
+            "JSON"
+          ]
+        }
+      }
+    ]
+  },
+  "mssqlqra": {
+    "host": "sw8-27",
+    "port": 0,
+    "url": "mssql://sa:siesanta.1234@sw8-27/QRA.Dev",
+    "database": "QRA.Dev",
+    "password": "siesanta.1234",
+    "name": "mssqlqra",
+    "user": "sa",
+    "connector": "mssql"
+  }
+}
